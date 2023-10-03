@@ -1,0 +1,45 @@
+body{
+    font-size: 11pt;
+    background-color: rgb(238, 181, 107);
+    font-family: Noto Serif, serif;
+}
+
+.resumeHeader{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 0px;
+    font-size: 25pt;
+    font-family: Merriweather, serif;
+}
+
+.resumeBody{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+h2{
+    text-decoration: underline;
+    font-size: 13pt;
+    font-family: Merriweather, serif;
+}
+
+.boldLeftItem {
+    font-weight: bold;
+    display: inline-block;
+    text-align: left;
+    width: 50%
+}
+
+.year {
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 50%
+}
+
+.skillsList {
+    margin-top: 0px;
+}

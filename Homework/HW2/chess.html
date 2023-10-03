@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="Evin St Laurent" content="Chess Page">
+        <title>Evin's Chessboard</title>
+        <link rel="stylesheet" href="chess.css" type="text/css">
+        <link rel="icon" href="https://static.thenounproject.com/attribution/2069691-600.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <!--table for chessboard-->
+        <table id="board">
+            <!--top row with A-H column labels-->
+            <tr>
+                <th class="labelSquare"></th>
+                <th class="labelSquare">A</th>
+                <th class="labelSquare">B</th>
+                <th class="labelSquare">C</th>
+                <th class="labelSquare">D</th>
+                <th class="labelSquare">E</th>
+                <th class="labelSquare">F</th>
+                <th class="labelSquare">G</th>
+                <th class="labelSquare">H</th>
+                <th class="labelSquare"></th>
+            </tr>
+            <!--board row 8 with "8" label spaces on either end and row of black pieces-->
+            <tr>
+                <th class="labelSquare">8</th>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069690-600.png" alt="Black Rook" title="A8"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069691-600.png" alt="Black Knight" title="B8"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069698-600.png" alt="Black Bishop" title="C8"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069683-600.png" alt="Black Queen" title="D8"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069694-600.png" alt="Black King" title="E8"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069698-600.png" alt="Black Bishop" title="F8"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069691-600.png" alt="Black Knight" title="G8"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069690-600.png" alt="Black Rook" title="H8"></td>
+                <th class="labelSquare">8</th>
+            </tr>
+            <!--board row 7 with "7" label spaces on either end and row of black pawns-->
+            <tr>
+                <th class="labelSquare">7</th>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069696-600.png" alt="Black Pawn" title="A7"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069696-600.png" alt="Black Pawn" title="B7"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069696-600.png" alt="Black Pawn" title="C7"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069696-600.png" alt="Black Pawn" title="D7"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069696-600.png" alt="Black Pawn" title="E7"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069696-600.png" alt="Black Pawn" title="F7"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069696-600.png" alt="Black Pawn" title="G7"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069696-600.png" alt="Black Pawn" title="H7"></td>
+                <th class="labelSquare">7</th>
+            </tr>
+            <!--board row 6 with "6" label spaces on either end-->
+            <tr>
+                <th class="labelSquare">6</th>
+                <td title="A6" class="lightSpace"></td>
+                <td title="B6" class="darkSpace"></td>
+                <td title="C6" class="lightSpace"></td>
+                <td title="D6" class="darkSpace"></td>
+                <td title="E6" class="lightSpace"></td>
+                <td title="F6" class="darkSpace"></td>
+                <td title="G6" class="lightSpace"></td>
+                <td title="H6" class="darkSpace"></td>
+                <th class="labelSquare">6</th>
+            </tr>
+            <!--board row 5 with "5" label spaces on either end-->
+            <tr>
+                <th class="labelSquare">5</th>
+                <td title="A5" class="darkSpace"></td>
+                <td title="B5" class="lightSpace"></td>
+                <td title="C5" class="darkSpace"></td>
+                <td title="D5" class="lightSpace"></td>
+                <td title="E5" class="darkSpace"></td>
+                <td title="F5" class="lightSpace"></td>
+                <td title="G5" class="darkSpace"></td>
+                <td title="H5" class="lightSpace"></td>
+                <th class="labelSquare">5</th>
+            </tr>
+            <!--board row 4 with "4" label spaces on either end-->
+            <tr>
+                <th class="labelSquare">4</th>
+                <td title="A4" class="lightSpace"></td>
+                <td title="B4" class="darkSpace"></td>
+                <td title="C4" class="lightSpace"></td>
+                <td title="D4" class="darkSpace"></td>
+                <td title="E4" class="lightSpace"></td>
+                <td title="F4" class="darkSpace"></td>
+                <td title="G4" class="lightSpace"></td>
+                <td title="H4" class="darkSpace"></td>
+                <th class="labelSquare">4</th>
+            </tr>
+            <!--board row 3 with "3" label spaces on either end-->
+            <tr>
+                <th class="labelSquare">3</th>
+                <td title="A3" class="darkSpace"></td>
+                <td title="B3" class="lightSpace"></td>
+                <td title="C3" class="darkSpace"></td>
+                <td title="D3" class="lightSpace"></td>
+                <td title="E3" class="darkSpace"></td>
+                <td title="F3" class="lightSpace"></td>
+                <td title="G3" class="darkSpace"></td>
+                <td title="H3" class="lightSpace"></td>
+                <th class="labelSquare">3</th>
+            </tr>
+            <!--board row 2 with "2" label spaces on either end and row of white pawns-->
+            <tr>
+                <th class="labelSquare">2</th>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069695-600.png" alt="White Pawn" title="A2"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069695-600.png" alt="White Pawn" title="B2"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069695-600.png" alt="White Pawn" title="C2"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069695-600.png" alt="White Pawn" title="D2"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069695-600.png" alt="White Pawn" title="E2"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069695-600.png" alt="White Pawn" title="F2"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069695-600.png" alt="White Pawn" title="G2"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069695-600.png" alt="White Pawn" title="H2"></td>
+                <th class="labelSquare">2</th>
+            </tr>
+            <!--board row 1 with "1" label spaces on either end and row of white pieces-->
+            <tr>
+                <th class="labelSquare">1</th>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069689-600.png" alt="White Rook" title="A1"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069692-600.png" alt="White Knight" title="B1"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069697-600.png" alt="White Bishop" title="C1"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069684-600.png" alt="White Queen" title="D1"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069693-600.png" alt="White King" title="E1"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069697-600.png" alt="White Bishop" title="F1"></td>
+                <td class="darkSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069692-600.png" alt="White Knight" title="G1"></td>
+                <td class="lightSpace"><img class="piece" src="https://static.thenounproject.com/attribution/2069689-600.png" alt="White Rook" title="H1"></td>
+                <th class="labelSquare">1</th>
+            </tr>
+            <!--botoom row with A-H column labels-->
+            <tr>
+                <th class="labelSquare"></th>
+                <th class="labelSquare">A</th>
+                <th class="labelSquare">B</th>
+                <th class="labelSquare">C</th>
+                <th class="labelSquare">D</th>
+                <th class="labelSquare">E</th>
+                <th class="labelSquare">F</th>
+                <th class="labelSquare">G</th>
+                <th class="labelSquare">H</th>
+                <th class="labelSquare"></th>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,19 +1,19 @@
 body{
-    background-color: white;
-    color: #404040;
-    font-size: 11pt;
-    font-family: Georgia;
+    background-color: black;
+    color: red;
+    font-size: 10pt;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 a{
-    color: #A4A400
+    color: #1100ff
 }
 
 h1,h2,h3,h4,h5,h6{
-    color: #A4A400;
+    color: #a40000;
     background-color: #F0F0F0;
     font-size: 18pt;
-    font-family: "Lucida Sans Unicode";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: underline;
     font-weight: normal;
 }
