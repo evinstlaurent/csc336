@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI Exam Question</title>
+        <script>
+            //function calculates both peoples bmi and returns reuslts to the html file
+            function calculateBMI() {
+                //store all user inputted information values and result section html in variables
+                let heightMark = document.getElementById("heightMark").value;
+                let weightMark = document.getElementById("weightMark").value;
+                let heightJohn = document.getElementById("heightJohn").value;
+                let weightJohn = document.getElementById("weightJohn").value;
+                let BMIOutput = document.getElementById("bmiResults").innerHTML;
+
+                //calculate bmi
+                let bmiMark = weightMark / heightMark**2;
+                let bmiJohn = weightJohn / heightJohn**2;
+
+                let markHigherBMI = Boolean(bmiMark > bmiJohn);
+
+                //append height, weight, and calculated bmi for each person in html to BMIOutput variable
+                BMIOutput = BMIOutput + `<div>Mark Height: ${heightMark}m<br>Mark Weight: ${weightMark}kg<br><br>John Height: ${heightJohn}m<br>John Weight: ${weightJohn}kg<br><br><br>Mark BMI: ${bmiMark}<br>John BMI: ${bmiJohn}</div><br><br>`;
+                
+                //if markHigherBMI is true, it will append to BMIOutput stating so, if it is false it will append stating it is not true
+                if (markHigherBMI) {
+                    BMIOutput = BMIOutput + `<div>Mark's BMI is bigger than John's BMI<div><br>`;
+                } else {
+                    BMIOutput = BMIOutput + `<div>Mark's BMI is not bigger than John's BMI<div><br>`;
+                }
+
+                document.getElementById("bmiResults").innerHTML = BMIOutput;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>BMI Calculator</h1>
+        <h2>Mark's Information</h2>
+        <!--section for inputting Marks information-->
+        <div><textarea id="heightMark" placeholder="Input Mark's Height"></textarea></div>
+        <div><textarea id="weightMark" placeholder="Input Mark's Weight"></textarea></div>
+        <br>
+        <h2>John's Information</h2>
+        <!--section for inputting Johns information-->
+        <div><textarea id="heightJohn" placeholder="Input John's Height"></textarea></div>
+        <div><textarea id="weightJohn" placeholder="Input John's Weight"></textarea></div>
+        <br>
+        <!--button to run the calculateBMI function-->
+        <div><button onclick="calculateBMI()">Calculate BMI</button></div>
+
+        <div>
+            <h3>Results</h3>
+            <!--section where bmi results will be added by the calculateBMI function-->
+            <div id="bmiResults">
+
+            </div>
+        </div>
+
+    </body>
+</html>

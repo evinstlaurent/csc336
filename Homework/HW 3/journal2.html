@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Victoria's Journal</title>
+      <link rel="stylesheet" type="text/css" href="journal2.css">
+      <script src="journal2.js" type="text/javascript"></script>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+      <div class="journalHeader">
+            <h2>Victoria's Journal</h2>
+            <h3 class="subheader">So fresh and so clean</h3>
+      </div>
+    <div id = "entryForm">
+            <div class = "entryTitle">
+                  <textarea id="title" rows="1" placeholder="Entry Title"></textarea>
+            </div>
+            <div>
+                  <textarea id="photo" rows="1" placeholder="Photo URL"></textarea>
+            </div>
+            <div>
+                  <textarea id = "inputText" cols = "64" rows = "3" placeholder = "Say something about yourself."></textarea>
+            </div>
+            <button class = "submit" onclick = "addEntry();clearForm()">Submit</button>
+    </div>
+
+    <div id = "journal">
+      <h1>Journal Entries</h1>
+      <div id="entries">
+      </div>
+      <button class = "submit" onclick = "clearEntries()">Clear All Entries</button> 
+    </div>
+
+
+</body>
+</html>
+

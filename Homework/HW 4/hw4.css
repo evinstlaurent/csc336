@@ -1,0 +1,47 @@
+.bmiSection, .pointSection, .tipSection {
+    background-color: #67b5ff;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: blue;
+    box-shadow: 5px 5px black;
+    text-align: center;
+    width: 30%;
+    min-height: 240px;
+    margin-bottom: 20px;
+}
+
+.bmiSection {
+    float: left;
+    margin-left: 10px;
+}
+
+.pointSection {
+    margin: auto;
+}
+
+.tipSection {
+    float: right;
+    margin-right: 10px;
+}
+
+.outputText {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.firstArea {
+    float:left;
+    margin-left: 3%;
+}
+
+.secondArea {
+    float: right;
+    margin-right: 3%;
+}
+
+h3 {
+    margin-top: 5%;
+}

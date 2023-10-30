@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dogs Exam Question</title>
+        <script>
+            function checkDogs(juliaDogs, kateDogs) {
+                var juliaDogs = juliaDogs;
+                var kateDogs = kateDogs;
+
+                var newJuliaDogs = juliaDogs.slice();
+                newJuliaDogs.pop();
+                newJuliaDogs.shift();
+
+                var totalArray = newJuliaDogs.concat(kateDogs);
+
+                var index = 0;
+
+                var arrayLen = totalArray.length;
+
+                for (index; index < arrayLen; index++) {
+                    if (totalArray[index] >= 3) {
+                        console.log("\nDog number "+(index+1)+" is an adult, and is "+totalArray[index]+" years old.");
+                    } else {
+                        console.log("\nDog number "+(index+1)+" is still a puppy, and is "+totalArray[index]+" years old.");
+                    }
+                }
+
+                var ageMax = 0;
+                var ageMin = 99999999;
+
+                index = 0;
+
+                for (index; index < arrayLen; index++) {
+                    if (totalArray[index] > ageMax) {
+                        ageMax = totalArray[index];
+                    }
+                    if (totalArray[index] < ageMin) {
+                        ageMin = totalArray[index];
+                    }
+                }
+
+                var ageSum = 0;
+                var ageCount = 0;
+                index = 0;
+                for (index; index < arrayLen; index++) {
+                    ageSum += totalArray[index]; 
+                }
+
+                var ageAverage = ageSum / arrayLen;
+
+                console.log("\nMax Age: "+ageMax+"\nMin Age: "+ageMin+"\nAverage Age: "+ageAverage);
+
+
+
+            }
+            checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3])
+            checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4])
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

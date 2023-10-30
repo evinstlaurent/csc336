@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function changeCircleSize(change) {
+                const circle = document.getElementById("ball");
+                // Clamp the circle radius to a minimum of 10 and a maximum of 250,
+                // so it won't disappear or get bigger than the viewport
+                const newValue = Math.min(Math.max(circle.r.baseVal.value + change, 10), 250);
+                circle.setAttribute("r", newValue);
+            }
+
+            function moveUp() {
+                const circle = document.getElementById("ball");
+                const radius = circle.r.baseVal.value; 
+                let changeY = -(radius * 0.5);
+                moveCircle(0,changeY);
+            }
+
+            function scaleUp() {
+                const circle = document.getElementById("ball"); 
+                let change = Math.round(circle.r.baseVal.value * 0.05);
+                changeCircleSize(change);
+            }
+
+            function scaleDown() {
+                const circle = document.getElementById("ball"); 
+                let change = Math.round(circle.r.baseVal.value * -0.05);
+                changeCircleSize(change);
+            }
+
+            function moveLeft() {
+                const circle = document.getElementById("ball"); 
+                const radius = circle.r.baseVal.value;
+                let changeX = - (radius * 0.5);
+                moveCircle(changeX,0);
+            }
+
+            function moveUp() {
+                const circle = document.getElementById("ball");
+                const radius = circle.r.baseVal.value; 
+                let changeY = -(radius * 0.5);
+                moveCircle(0,changeY);
+            }
+
+            function moveDown() {
+                const circle = document.getElementById("ball");
+                const radius = circle.r.baseVal.value; 
+                let changeY = -(radius * 0.5);
+                moveCircle(0,-changeY);
+            }
+
+            function moveRight() {
+                const circle = document.getElementById("ball"); 
+                const radius = circle.r.baseVal.value;
+                let changeX = - (radius * -0.5);
+                moveCircle(changeX,0);
+            }
+
+            function moveCircle(changeX, changeY) {
+                const circle = document.getElementById("ball");
+                const radius = circle.r.baseVal.value;
+                const currentX = circle.cx.baseVal.value;
+                const currentY = circle.cy.baseVal.value;
+
+                const newValueX = Math.min(Math.max(currentX + changeX, radius), window.innerWidth-(currentX - 2*radius));
+
+                const newValueY = Math.min(Math.max(currentY + changeY, radius), window.innerHeight-(currentY - 2*radius));
+
+                circle.setAttribute("cx", newValueX);
+                circle.setAttribute("cy", newValueY);
+                
+                console.log(newValueX, newValueY);
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <button onclick="scaleUp()">Scale Up</button>
+            <button onclick="scaleDown()">Scale Down</button>
+            <button onclick="moveUp()">Move Up</button>
+            <button onclick="moveDown()">Move Down</button>
+            <button onclick="moveLeft()">Move Left</button>
+            <button onclick="moveRight()">Move Right</button>
+        </div>
+        <svg width="1000" height="1000">
+            <circle id="ball" cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </body>
+</html>

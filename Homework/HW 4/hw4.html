@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coding Challenges</title>
+        <link rel="stylesheet" type="text/css" href="hw4.css">
+        <script src="hw4.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--BMI calculator section-->
+        <div class="bmiSection">
+            <h2>BMI Calculator</h2>
+            <!--first area contains input fields for person 1-->
+            <div class="firstArea">
+                <h3>Person 1<br>Information</h3>
+                <div><textarea id="height1" placeholder="Input First Person's Height"></textarea></div>
+                <div><textarea id="weight1" placeholder="Input First Person's Weight"></textarea></div>
+            </div>
+
+            <!--second area conatins input fields for person 2-->
+            <div class="secondArea">
+                <h3>Person 2<br>Information</h3>
+                <div><textarea id="height2" placeholder="Input Second Person's Height"></textarea></div>
+                <div><textarea id="weight2" placeholder="Input Second Person's Weight"></textarea></div>
+            </div>
+            
+            <!--BMI submit button that runs the calculateBMI function and then clears the input fields-->
+            <div><button onclick="calculateBMI();clearBMIFields()">Calculate BMI</button></div>
+            <div>
+                <h3>Results</h3>
+                <!--section where bmi results will be added by the calculateBMI function-->
+                <div id="bmiResults">
+
+                </div>
+                <!--button clearing all bmi results-->
+                <div><button onclick="clearBMIResults()">Clear All Results</button></div>
+            </div>
+        </div>
+        
+        <!--tip calculator section-->
+        <div class="tipSection">
+            <h2>Tip Calculator</h2>
+            <h3>Bill Information</h3>
+            <!--field for bill cost input-->
+            <div><textarea id="billCost" placeholder="Input Cost of Bill"></textarea></div>
+            <!--tip submit button that runs the calculateTip function and then clears the input field-->
+            <div><button onclick="calculateTip(); clearBillField()">Calculate Tip and Total</button></div>
+            <div>
+                <h3>Results</h3>
+                <!--section where tip results will be added by the calculateTip function-->
+                <div id="tipResults">
+
+                </div>
+                <!--button clearing all tip results-->
+                <div><button onclick="clearTipResults()">Clear All Results</button></div>
+            </div>
+        </div>
+
+        <!--point calculator section-->
+        <div class="pointSection">
+            <h2>Point Calculator</h2>
+            <!--first area contains inputfields for pandas team-->
+            <div class="firstArea">
+                <h3>Panda's Points</h3>
+                <div><textarea id="pandas1" placeholder="Input Pandas Round 1 Score"></textarea></div>
+                <div><textarea id="pandas2" placeholder="Input Pandas Round 2 Score"></textarea></div>
+                <div><textarea id="pandas3" placeholder="Input Pandas Round 3 Score"></textarea></div>
+            </div>
+
+            <!--second area contains input fields for koalas team-->
+            <div class="secondArea">
+                <h3>Koala's Points</h3>
+                <div><textarea id="koalas1" placeholder="Input Koalas Round 1 Score"></textarea></div>
+                <div><textarea id="koalas2" placeholder="Input Koalas Round 2 Score"></textarea></div>
+                <div><textarea id="koalas3" placeholder="Input Koalas Round 3 Score"></textarea></div>
+            </div>
+            <!--button that runs the calculateWinner function and clears the input fields-->
+            <div><button onclick="calculateWinner(); clearPointsFields()">Get Winner</button></div>
+            <div>
+                <h3>Results</h3>
+                <!--section where winner results will be added by the calculateWinner function-->
+                <div id="winnerResults">
+
+                </div>
+                <!--button clearing all winner results-->
+                <div><button onclick="clearWinnerResults()">Clear All Results</button></div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
