@@ -279,3 +279,12 @@ h1, h2, h3, h4, h5, h6 {
 .FAQQuestion:hover {
     cursor: pointer;
 }
+
+.FAQQuestion1ScoutList {
+    list-style-type: upper-alpha;
+}
+
+.FAQQuestion1ScoutListItemTitle {
+    text-decoration: underline;
+    font-weight: bold;
+}
