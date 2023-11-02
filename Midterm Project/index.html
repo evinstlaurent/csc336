@@ -9,28 +9,30 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
-        <a href="https://www.vecteezy.com/free-png/social-media-icons">Social Media Icons PNGs by Vecteezy</a>
+        <link rel="icon" type="image/x-icon" href="./images/FCShowLogo.gif">
+        <link href="https://www.vecteezy.com/free-png/social-media-icons" rel="icon">
     </head>
     <body>
-        <div id="menuBar">
+        <!--nav bar present on all pages-->
+        <nav id="menuBar">
             <a class="menuLink" href="#logoHeadSection">Home</a> |
             <a class="menuLink" href="#directionSection">Directions</a> |
             <a class="menuLink" href="#scheduleSection">Schedule</a> |
             <a class="menuLink" href="#priceSection">Prices</a> |
-            <a class="menuLink" href="./rides.html">Rides</a> |
             <a class="menuLink" href="./events.html">Events</a> |
             <a class="menuLink" href="./media.html">Media</a> |
             <a class="menuLink" href="./scouts.html">Scouts</a> |
             <a class="menuLink" href="./faq.html">FAQ</a> |
-            <a class="menuLink" href="./stars.html">Our Stars</a> |
-            <a class="menuLink" href="./sponsors.html">Our Supporters and Banner Towing</a>
-        </div>
+            <a class="menuLink" href="./sponsors.html">Our Supporters</a>
+        </nav>
+        <!--heading section with logos and welcone title-->
         <div id="logoHeadSection">
             <img src="./images/FCShowLogo.gif" alt="Flying Circus Airshow Logo" class="logoShowIMG">
             <img src="./images/FCDomeLogo.gif" alt="Flying Circus Aerodome Logo" class="logoDromeIMG">
             <div class="headingTitle">Welcome to the Flying Circus Airshow & Aerodrome</div>
             <div class="clearDiv"></div>
         </div>
+        <!--section with history paragraph-->
         <div class="contentSection" id="aboutUsSection">
             <h1 class="sectionTitle">Who We Are</h1>
             <p class="historyParagraph">Originally formed in 1970 using the name “Flying Circus Aerodrome”, a group of aviators decided to fly replicas of WWI aircraft to simulate the "barnstorming" activities of that post war period. However, this proved to be a daunting task as these rather fragile aircraft required a considerable amount of time, effort, and money to keep them flying. As a result, many members of that original group, worn out from the effort, decided to close down the operation.</p>
@@ -38,6 +40,8 @@
             <p class="historyParagraph">About all that has changed from that day to this, is that the Flying Circus has grown not only in its membership, but also in the variety and number of aircraft in our inventory. The aerial demonstrations, thrilling acts, and the ride hopping operations, which were central to the barnstorming era are still an essential part of our program.</p>
             <p class="historyParagraph">With the exception of the Flying Circus silver and black 450 hp Stearman, all of the the aircraft on the field are privately owned. And barring the occasional work or family commitment, their pilots bring them to the field to share them with the audience each year, from the first Sunday in May through the last Sunday in October.</p>
         </div>
+
+        <!--section with directions and google map-->
         <div class="contentSection" id="directionSection">
             <h1 class="sectionTitle">Directions to the Flying Circus</h1>
             <div class="directionElements">
@@ -59,11 +63,12 @@
                     </ul>
                     <p>Contact the Flying Circus (540-439-8661) to arrange for shuttle transportation.</p>
                 </div>
-                <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d399409.5333592008!2d-77.713315!3d38.547897!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b68f09c72c0ead%3A0xb8128cef7477c715!2s5114%20Ritchie%20Rd%2C%20Bealeton%2C%20VA%2022712!5e0!3m2!1sen!2sus!4v1698463980660!5m2!1sen!2sus" width="45%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d399409.5333592008!2d-77.713315!3d38.547897!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b68f09c72c0ead%3A0xb8128cef7477c715!2s5114%20Ritchie%20Rd%2C%20Bealeton%2C%20VA%2022712!5e0!3m2!1sen!2sus!4v1698463980660!5m2!1sen!2sus" width="600" height="605" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="clearDiv"></div>
         </div>
 
+        <!--section showing all prices and also information about rides-->
         <div class="contentSection" id="priceSection">
             <h1 class="sectionTitle">Admission and Ride Prices</h1>
             <h2 class="priceSubheading">Admission tickets are only sold at our gate on the day of the Airshow<br>No advance purchase is available (except for Season Passes)</h2>
@@ -81,14 +86,23 @@
                 <div>
                     <h3>Aircraft Ride Prices</h3>
                     <p class="priceList">
-                        Open Cockpit Biplane (Stearman) - Single Passenger<br>
+                        <span class="bold">Open Cockpit Biplane (Stearman) - Single Passenger</span><br>
                         (Standard Ride) ... $ 100.00<br>
                         (Aerobatic Ride)... $ 180.00<br>
-                        Open Cockpit Biplane (Waco/Travel Air) - Two Passengers<br>
+                        * Max passenger weight = 270 - 285 lbs.<br>
+                        NOTE: You must be at least 16 years old to take an Aerobatic Ride.<br><br>
+                        <span class="bold">Open Cockpit Biplane (Waco/Travel Air) - Two Passengers</span><br>
                         (Standard Ride) ... $ 180.00<br>
-                        Enclosed Cockpit (Piper Cub) - Single Passenger<br>
+                        * Max combined passenger weight = 350 lbs.<br><br>
+                        <span class="bold">Enclosed Cockpit (Piper Cub) - Single Passenger</span><br>
                         (Standard Ride) ... $ 65.00<br>
-                        See the <a href="./rides.html">Aircraft Rides Page</a> for additional information and limitations.
+                        * Max passenger weight = 130 - 180 lbs depending on the aircraft<br>
+                        * Please use the weight limits listed above as a guide when determining the type of ride you wish to purchase.<br>
+                        These are typical weight limits for hot, humid, summer flying conditions.<br>
+                        Please note that the actual weight limits can vary due to fuel load, wind, and atmospheric conditions.<br><br>
+                        <span class="bold">"Standard Rides" vs "Aerobatic Rides"</span><br>
+                        The Standard Ride is an 8-10 minute mostly "straight-and-level" ride with some steep turns and wingovers for excitement.<br>
+                        The Aerobatic Ride is approximately 15 minutes and includes some or all of the basic aerobatic maneuvers: Spin, Aileron Roll, Barrel Roll, Loop, Snap Roll, Cuban 8, and Split "S".<br>
                     </p>
                 </div>
                 <hr>
@@ -107,32 +121,29 @@
                     <h3>Season Pass</h3>
                     <p>To obtain a Flying Circus Airshow Season Pass please download, print, and complete the form found <a href="FlyingCircusSeasonPassForm.pdf" target="_blank">HERE</a> and mail with payment to:<br><br>Flying Circus Airshow Season Pass<br>P.O. Box 99<br>Bealeton, VA 22712</p>
                     <p>Please make check or money order payable to:<br>The Flying Circus Airshow</p>
-                    <p>
-                        Season Pass holders are subject to the following usage restrictions:
-                        <ul>
-                            <li class="passCondition">Season Passes are valid only for the person named on the Pass.</li>
-                            <li class="passCondition">Season Pass must be presented at the gate at time of entry.</li>
-                            <li class="passCondition">Season Passes are non-transferable and may not be given, loaned, rented, or transferred to anyone for any reason whatsoever.</li>
-                        </ul>
-                    </p>
+                    Season Pass holders are subject to the following usage restrictions:
+                    <ul>
+                        <li class="passCondition">Season Passes are valid only for the person named on the Pass.</li>
+                        <li class="passCondition">Season Pass must be presented at the gate at time of entry.</li>
+                        <li class="passCondition">Season Passes are non-transferable and may not be given, loaned, rented, or transferred to anyone for any reason whatsoever.</li>
+                    </ul>
                 </div>
                 <hr>
                 <div class="passSection">
                     <h3>Gift Certificates</h3>
                     <p>To obtain a Flying Circus Airshow Gift Certificate please download, print, and complete the form found <a href="gift-cert.pdf" target="_blank">HERE</a> and mail with payment to:<br><br>Flying Circus Airshow Gift Certificates<br>P.O. Box 99<br>Bealeton, VA 22712</p>
                     <p>Please make check or money order payable to:<br>The Flying Circus Airshow</p>
-                    <p>
-                        If ordering a Gift Cetificate please note the following:
-                        <ul>
-                            <li class="passCondition">Please allow two (2) weeks for delivery of the gift certificate.</li>
-                            <li class="passCondition">Certificates may be used at any regularly scheduled airshow (May thru October) for up to one year from the date of issue regardless of any price changes after the issue date.</li>
-                            <li class="passCondition">Certificates may not be redeemed for cash.</li>
-                        </ul>
-                    </p>
+                    If ordering a Gift Cetificate please note the following:
+                    <ul>
+                        <li class="passCondition">Please allow two (2) weeks for delivery of the gift certificate.</li>
+                        <li class="passCondition">Certificates may be used at any regularly scheduled airshow (May thru October) for up to one year from the date of issue regardless of any price changes after the issue date.</li>
+                        <li class="passCondition">Certificates may not be redeemed for cash.</li>
+                    </ul> 
                 </div>
             </div>
         </div>
         
+        <!--section showing flyng circus schedule-->
         <div class="contentSection" id="scheduleSection">
             <h1 class="sectionTitle">Flying Circus Airshow Schedule</h1>
             <h1 class="scheduleSubheading">Every Sunday May Through October!</h1>
@@ -142,6 +153,7 @@
                 Airshow starts promptly at 2:30 PM<br>
                 Airshow ends at approximately 4:00 PM
             </h2>
+            <!--flying circus schedule-->
             <table id="scheduleTable">
                 <tr>
                     <th class="scheduleTableHeader">Airshow Date</th>
@@ -262,6 +274,7 @@
                 </tr>
             </table>
         </div>
+        <!--section showing all aircraft and descriptions-->
         <div id="planeSection" class="contentSection">
             <h1 class="sectionTitle">Our Aircraft</h1>
             <table id="planeTable">
@@ -347,7 +360,100 @@
                 </tr>
             </table>
         </div>
+        <!--section with image carousel for all flying circus personnel-->
+        <div class="contentSection" id="starsSection">
+            <h1 class="sectionTitle">Meet Our Stars</h1>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Jesse_Bean.gif" alt="Jesse Beam">
+                        <div class="image-description">Jesse Bean - Commerical Pilot, Jump Pilot, 450 Stearman</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/David_Brown2.gif" alt="David Brown">
+                        <div class="image-description">David Brown - Owner and Chief pilot of Stearman Biplane Rides, LLC</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Joe_Callen.gif" alt="Joe Callen">
+                        <div class="image-description">Joe Callen - Skydiver, Information System Security Engineer</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Rick_Conn.gif" alt="Rick Conn">
+                        <div class="image-description">Rick Conn - Retired Airline Pilot - Captain (US Airways/American Airlines) </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Wayne_Deer.gif" alt="Wayne Deer">
+                        <div class="image-description">Wayne Deer - Pilot</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Teresa_Francis.gif" alt="Teresa Francis">
+                        <div class="image-description">Teresa Francis - Senior Customer Service Agent USAirways</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Mike_King.gif" alt="Mike King">
+                        <div class="image-description">Mike King - Pilot for American Airlines </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Patti_Pfeifer.gif" alt="Patti Pfeifer">
+                        <div class="image-description">Patti Pfeifer - Gift Shop</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Jana_Leigh_Sheaffer.gif" alt="Jana Leigh Sheaffer">
+                        <div class="image-description">Jana Leigh Sheaffer - Wing Walker</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Kirk_Wicker.gif" alt="Kirk Wicker">
+                        <div class="image-description">Kirk Wicker - Pilot</div>
+                    </div>
+                    
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Joe_Bender.gif" alt="Joe Bender">
+                        <div class="image-description">Joe Bender - Ground Crew Chief</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/John_Corradi.gif" alt="John Corradi">
+                        <div class="image-description">John Corradi - Pilot</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Chris_Edwards.gif" alt="Chris Edwards">
+                        <div class="image-description">Chris Edwards - Announcer</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/John_D_King.gif" alt="John D. King">
+                        <div class="image-description">John D. King - Pilot</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Charlie_Kulp.gif" alt="Charlie Kulp">
+                        <div class="image-description">Charlie Kulp - Pilot</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://www.flyingcircusairshow.com/stars/Jim_Wine.gif" alt="Jim Wine">
+                        <div class="image-description">Jim Wine - Skydiver</div>
+                    </div>
+                </div>
+                <button class="prev-button">Previous</button>
+                <button class="next-button">Next</button>
+            </div>
+        </div>
+        <!--social bar present on all pages-->
         <div class="socialBar">
+            Info@FlyingCircusAirshow.com | (540) 439-8661<br>
+            Flying Circus Airshows, Inc. * P.O. Box 99 * Bealeton, VA 22712<br>
             <a href="https://www.instagram.com/flyingcircusairshows/" target="_blank"><img class="socialIcon" src="./images/instagramIcon.png" alt="instagram icon"></a>
             <a href="https://www.facebook.com/flyingcircusairshow" target="_blank"><img class="socialIcon" src="./images/facebookIcon.png" alt="facebook icon"></a>
         </div>  

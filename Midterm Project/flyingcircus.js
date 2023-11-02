@@ -1,3 +1,4 @@
+//function for displaying the answers to the faq questions
 function dropdownQuestion(answer, type, questionNum) {
     let questionNumHTML = document.getElementById("FAQAnswer"+type+questionNum).innerHTML;
 
@@ -14,8 +15,6 @@ function dropdownQuestion(answer, type, questionNum) {
 
 
 //carousel javascript: 
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const carousel = document.querySelector('.carousel');
     const slides = document.querySelectorAll('.carousel-slide');

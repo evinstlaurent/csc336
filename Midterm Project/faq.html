@@ -9,26 +9,34 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
-        <a href="https://www.vecteezy.com/free-png/social-media-icons">Social Media Icons PNGs by Vecteezy</a>
+        <link rel="icon" type="image/x-icon" href="./images/FCShowLogo.gif">
+        <link href="https://www.vecteezy.com/free-png/social-media-icons" rel="icon">
     </head>
     <body>
-        <div id="menuBar">
+        <!--nav bar present on all pages-->
+        <nav id="menuBar">
             <a class="menuLink" href="./index.html#logoHeadSection">Home</a> |
             <a class="menuLink" href="./index.html#directionSection">Directions</a> |
             <a class="menuLink" href="./index.html#scheduleSection">Schedule</a> |
             <a class="menuLink" href="./index.html#priceSection">Prices</a> |
-            <a class="menuLink" href="./rides.html">Rides</a> |
             <a class="menuLink" href="./events.html">Events</a> |
             <a class="menuLink" href="./media.html">Media</a> |
             <a class="menuLink" href="./scouts.html">Scouts</a> |
             <a class="menuLink" href="./faq.html">FAQ</a> |
-            <a class="menuLink" href="./stars.html">Our Stars</a> |
-            <a class="menuLink" href="./sponsors.html">Our Supporters and Banner Towing</a>
-        </div>
+            <a class="menuLink" href="./sponsors.html">Our Supporters</a>
+        </nav>
 
         <div class="headSection">
             <div class="headingTitle">Frequently Asked Questions</div>
         </div>
+
+        <!--links to any of the faq sections-->
+        <h2 class="FAQSubheading">
+            Click to jump to any of our FAQ Sections!<br>
+            <a href="#FAQGenSection">General FAQs</a> | <a href="#FAQEventSection">Balloon Festival FAQs</a> | <a href="#FAQScoutSection">Scouts FAQs</a>
+        </h2>
+
+        <!--general faq section-->
         <div class="contentSection" id="FAQGenSection">
             <h1 class="sectionTitle">General FAQs</h1>
             <h2 class="FAQSubheading">Click any of the questions to view their answer!</h2>
@@ -82,7 +90,7 @@
                 <dd id="FAQAnswerGen12"></dd>
             </dl>
             <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`All our airplane rides are on a first-come, first-served basis. All our ride tickets are numbered, and they are called out in that order.<br><br>`,'Gen',13)">13. Can I reserve an airplane ride in advance?</dt>
+                <dt class="FAQQuestion" onclick="dropdownQuestion(`All our airplane rides are on a first-come, first-served basis. All our ride tickets are numbered, and they are called out in that order. Purchase early in the day to expedite your ride.<br><br>`,'Gen',13)">13. Can I reserve an airplane ride in advance?</dt>
                 <dd id="FAQAnswerGen13"></dd>
             </dl>
             <dl class="FAQListing">
@@ -94,7 +102,7 @@
                 <dd id="FAQAnswerGen15"></dd>
             </dl>
             <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`We have a large tree shaded picnic area with picnic tables available for use on a first-come basis. We also have a large pavilion that (when it is not rented out by a group for the day) is also available on a first-come basis.<br><br>Additionally, you can bring a pop-up canopy or umbrella. However, these must be setup behind our seating are so as to not interfere with other customers view.<br><br>`,'Gen',16)">16. Is there any place to sit in the shade?</dt>
+                <dt class="FAQQuestion" onclick="dropdownQuestion(`We have a large tree shaded picnic area with picnic tables available for use on a first-come basis. We also have a large pavilion that (when it is not rented out by a group for the day) is also available on a first-come basis.<br><br>Additionally, you can bring a pop-up canopy or umbrella. However, these must be setup behind our seating are so as to not interfere with other customers view.<br><br>`,'Gen',16)">16. Is there any place to sit and eat in the shade?</dt>
                 <dd id="FAQAnswerGen16"></dd>
             </dl>
             <dl class="FAQListing">
@@ -102,14 +110,20 @@
                 <dd id="FAQAnswerGen17"></dd>
             </dl>
             <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`Gift certificates are redeemed at the gift shop, and you will be issued a ride ticket.<br><br>`,'Gen',18)">18. What if I have a gift certificate for and airplane ride?</dt>
+                <dt class="FAQQuestion" onclick="dropdownQuestion(`Gift certificates are redeemed at the gift shop, and you will be issued a ride ticket in order as described in question 13.<br><br>`,'Gen',18)">18. What if I have a gift certificate for and airplane ride?</dt>
                 <dd id="FAQAnswerGen18"></dd>
             </dl>
             <dl class="FAQListing">
                 <dt class="FAQQuestion" onclick="dropdownQuestion(`Yes we have restrooms. Our restrooms are clean, spacious, and handicap accessible.<br><br>`,'Gen',19)">19. Are there public restrooms available?</dt>
                 <dd id="FAQAnswerGen19"></dd>
             </dl>
+            <dl class="FAQListing">
+                <dt class="FAQQuestion" onclick="dropdownQuestion(`There is handicapped parking in the area immediately behind the audience seating area. Depending on the row you wish to sit in, it is only about 50 feet from the car to a bench. You are also welcome to bring your own lawn chairs and sit in the same area. The area is grass covered, but it is mowed & quite level. This area is also adjacent to the restrooms.<br><br>`,'Gen',20)">20. Is the airshow accessible to persons in a wheelchair, or that require assistance walking?</dt>
+                <dd id="FAQAnswerGen20"></dd>
+            </dl>
         </div>
+
+        <!--section with ballon festival faqs-->
         <div class="contentSection" id="FAQEventSection">
             <h1 class="sectionTitle">Balloon Festival FAQs</h1>
             <h2 class="FAQSubheading">Click any of the questions to view their answer!</h2>
@@ -119,7 +133,7 @@
                 <dd id="FAQAnswerEvent1"></dd>
             </dl>
             <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`Balloons will begin inflation and launching process around 0700-0730, if you don’t arrive early, you may miss the inflations and launches.<br><br>`,'Event',2)">2. What do I need to be there so early in the morning?</dt>
+                <dt class="FAQQuestion" onclick="dropdownQuestion(`Balloons will begin inflation and launching process around 0700-0730, if you don’t arrive early, you may miss the inflations and launches.<br><br>`,'Event',2)">2. Why do I need to be there so early in the morning?</dt>
                 <dd id="FAQAnswerEvent2"></dd>
             </dl>
             <dl class="FAQListing">
@@ -163,43 +177,12 @@
                 <dd id="FAQAnswerEvent12"></dd>
             </dl>
             <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`We will be offering airplane rides starting around 07:00AM, and will be offering them throughout the day until about 12:30PM. After the airshow (~3:45) we will resume the ride operation until all rides are finished, or until it gets too late to continue flying.<br><br>`,'Event',13)">13. When do you start/end the airplane rides?</dt>
+                <dt class="FAQQuestion" onclick="dropdownQuestion(`Yes, we have public restrooms. Our restrooms are clean, spacious, and handicap accessible. As we are expecting a large crowd, we will also have additional porta-johns available<br><br>`,'Event',13)">13. Are there public restrooms available during the Balloon Festival?</dt>
                 <dd id="FAQAnswerEvent13"></dd>
-            </dl>
-            <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`All our airplane rides are on a first-come, first-served basis. All our ride tickets are numbered, and they are called out in that order. Purchase early in the day to expedite your ride.<br><br>`,'Event',14)">14. Can I reserve an airplane ride in advance?</dt>
-                <dd id="FAQAnswerEvent14"></dd>
-            </dl>
-            <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`Our pilots take turns to distribute the rides evenly. We will try to accommodate special requests, but we may have to send other riders up ahead of you until your preferred pilot/airplane comes up in the rotation. Additionally, if you are requesting a particular aircraft for a standard ride, and the aircraft is primarily used for aerobatic rides, or double (two passenger) rides, you may have to wait until all those specialty rides are finished before we could put you in the airplane for a standard ride. This waiting process could take hours on balloon festival, so please keep this in mind before requesting a specific pilot or aircraft.<br><br>`,'Event',15)">15. Can I choose the airplane I want to ride in?</dt>
-                <dd id="FAQAnswerEvent15"></dd>
-            </dl>
-            <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`Yes, outside food and beverages are permitted. We also have a snack bar that offers good food at reasonable prices.  We have Hamburgers, Hot Dogs, Nachos, Pepsi products, Ice Cream, etc. For this event we will also have some additional food vendors on site.<br><br>`,'Event',16)"></dt>
-                <dd id="FAQAnswerEvent16"></dd>
-            </dl>
-            <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`We have a large shaded picnic area with picnic tables available for use on a first-come basis. We also have a large pavilion that, if not rented out, is also available on a first-come basis<br><br>`,'Event',17)">17. Is there any place to sit and eat in the shade?</dt>
-                <dd id="FAQAnswerEvent17"></dd>
-            </dl>
-            <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`Yes they are --- But there are a few restrictions ….. And a cautionary note:<ul><li> Pets must be kept on a leash at all times.</li><li>Pet owners are responsible for cleaning up after their pets.</li><li>Pet owners are responsible for insuring that their pets do not become a nuisance to our other customers.</li></ul>Please note that our pyrotechnics and aircraft are sometimes quite loud during the show, so please keep this in mind if your pet does not react well to sudden loud noises.<br><br>`,'Event',18)">18. Are pets allowed?</dt>
-                <dd id="FAQAnswerEvent18"></dd>
-            </dl>
-            <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`Gift certificates are redeemed at the gift shop, and you will be issued a ride ticket in order as described in question 14.<br><br>`,'Event',19)">19. What if I have a gift certificate for an airplane ride?</dt>
-                <dd id="FAQAnswerEvent19"></dd>
-            </dl>
-            <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`Yes, we have public restrooms. Our restrooms are clean, spacious, and handicap accessible. As we are expecting a large crowd, we will also have additional porta-johns available<br><br>`,'Event',20)"></dt>
-                <dd id="FAQAnswerEvent20"></dd>
-            </dl>
-            <dl class="FAQListing">
-                <dt class="FAQQuestion" onclick="dropdownQuestion(`There is handicapped parking in the area immediately behind the audience seating area. Depending on the row you wish to sit in, it is only about 50 feet from the car to a bench. You are also welcome to bring your own lawn chairs and sit in the same area. The area is grass covered, but it is mowed & quite level. This area is also adjacent to the restrooms.<br><br>`,'Event',21)">21. Is the airshow accessible to persons in a wheelchair, or that require assistance walking?</dt>
-                <dd id="FAQAnswerEvent21"></dd>
             </dl>
         </div>
 
+        <!--scouting faq section-->
         <div class="contentSection" id="FAQScoutSection">
             <h1 class="sectionTitle">Scouts FAQs</h1>
             <h2 class="FAQSubheading">Click any of the questions to view their answer!</h2>
@@ -301,7 +284,11 @@
                 <dd id="FAQAnswerScout24"></dd>
             </dl>
         </div>
+
+        <!--social bar present on all pages-->
         <div class="socialBar">
+            Info@FlyingCircusAirshow.com | (540) 439-8661<br>
+            Flying Circus Airshows, Inc. * P.O. Box 99 * Bealeton, VA 22712<br>
             <a href="https://www.instagram.com/flyingcircusairshows/" target="_blank"><img class="socialIcon" src="./images/instagramIcon.png" alt="instagram icon"></a>
             <a href="https://www.facebook.com/flyingcircusairshow" target="_blank"><img class="socialIcon" src="./images/facebookIcon.png" alt="facebook icon"></a>
         </div> 
