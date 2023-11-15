@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trello Demo App</title>
+        <script src="trelloAppDemo.js"></script>
+
+    </head>
+
+    <body>
+        <div id="appTitle">
+            <header>Sample Trello Automation Demo with Javascript</header>
+        </div>
+
+        <div id="userInput">
+            <div>
+                <!--Project Title Input Field-->
+                <label>Project Title</label>
+                <input type="text" id="projectIdeaTitle" placeholder="Enter project title..." name="projectIdeaTitle">
+            </div>
+            <br>
+            <div>
+                <label>Project Description</label>
+                <textarea row="4" cols="50" id="projectIdeaDescription" name="projectIdeaDescription" placeholder="Enter project description..."></textarea>
+            </div>
+            <br>
+            <button onclick="addCard();" id="submitButton">Add Card to Trello</button>
+        </div>
+        <br><br>
+        <div id="trelloResponse"></div>
+        <br><br>
+        <footer>All rights reserved. CSC-336 Fall 2023.</footer>
+    </body>
+</html>

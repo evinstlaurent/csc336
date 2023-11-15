@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Totally Not Trello</title>
+        <link rel="stylesheet" type="text/css" href="trelloRemake.css">
+        <script src="trelloRemake.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1 id="pageTitle">Totally Not Trello</h1>
+        <div id="listContainer">
+            <div class="list" id="listToDo" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+                <h2>To-Do</h2>
+                <hr>
+                <textarea name="titleToDo" id="titleToDo" cols="20" rows="1" placeholder="Type new card title..."></textarea>
+                <textarea name="contentToDo" id="contentToDo" cols="20" rows="3" placeholder="Type new card content..."></textarea>
+                <button onclick="submitCard('ToDo')">Sumbit New Card</button>
+                <hr>
+                <div class="cardContainer" id="cardContainerToDo"></div>
+            </div>
+            <div class="list" id="listUrgent" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+                <h2>Urgent</h2>
+                <hr>
+                <textarea name="titleUrgent" id="titleUrgent" cols="20" rows="1" placeholder="Type new card title..."></textarea>
+                <textarea name="contentUrgent" id="contentUrgent" cols="20" rows="3" placeholder="Type new card content..."></textarea>
+                <button onclick="submitCard('Urgent')">Sumbit New Card</button>
+                <hr>
+                <div class="cardContainer" id="cardContainerUrgent"></div>
+            </div>
+            <div class="list" id="listDone" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+                <h2>Done</h2>
+                <hr>
+                <textarea name="titleDone" id="titleDone" cols="20" rows="1" placeholder="Type new card title..."></textarea>
+                <textarea name="contentDone" id="contentDone" cols="20" rows="3" placeholder="Type new card content..."></textarea>
+                <button onclick="submitCard('Done')">Sumbit New Card</button>
+                <hr>
+                <div class="cardContainer" id="cardContainerDone"></div>
+            </div>
+            <div class="list" id="listReminders" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+                <h2>Reminders</h2>
+                <hr>
+                <textarea name="titleReminders" id="titleReminders" cols="20" rows="1" placeholder="Type new card title..."></textarea>
+                <textarea name="contentReminders" id="contentReminders" cols="20" rows="3" placeholder="Type new card content..."></textarea>
+                <button onclick="submitCard('Reminders')">Sumbit New Card</button>
+                <hr>
+                <div class="cardContainer" id="cardContainerReminders"></div>
+            </div>
+        </div>
+    </body>
+</html>

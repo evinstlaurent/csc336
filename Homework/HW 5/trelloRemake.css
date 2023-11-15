@@ -1,0 +1,50 @@
+body {
+    background-image: url(./happycat.jpg);
+    background-size: 250px;
+}
+
+#pageTitle {
+    background-color: white;
+    border-radius: 5px;
+    width: 25%;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    margin: auto;
+    text-decoration: underline;
+}
+
+.list {
+    background-color: white;
+    border-radius: 5px;
+    width: 20%;
+    box-shadow: 5px 5px 5px black;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#listContainer {
+    text-align: center;
+}
+
+.cardContainer {
+    text-align: center;
+}
+
+.card {
+    background-color: powderblue;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 2px black;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 2px;
+    text-decoration: underline;
+}
