@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="./js/calculator.js"></script>
+        <link rel="stylesheet" href="./css/calculator.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="display">0</div>
+            <div class="keys">
+                <button class="key" onclick="clearDisplay()">C</button>
+                <button class="key" onclick="invert()">+/-</button>
+                <button class="key" onclick="percent()">%</button>
+                <button class="keyOperator" data-action="divide">/</button>
+                <button class="key" onclick="appendDigit(7)">7</button>
+                <button class="key" onclick="appendDigit(8)">8</button>
+                <button class="key" onclick="appendDigit(9)">9</button>
+                <button class="keyOperator" data-action="multiply">*</button>
+                <button class="key" onclick="appendDigit(4)">4</button>
+                <button class="key" onclick="appendDigit(5)">5</button>
+                <button class="key" onclick="appendDigit(6)">6</button>
+                <button class="keyOperator" data-action="subtract">-</button>
+                <button class="key" onclick="appendDigit(1)">1</button>
+                <button class="key" onclick="appendDigit(2)">2</button>
+                <button class="key" onclick="appendDigit(3)">3</button>
+                <button class="keyOperator" onclick="operation('+')">+</button>
+                <span></span>
+                <button class="key" onclick="appendDigit(0)">0</button>
+                <button class="key" onclick="appendDigit('.')">.</button>
+                <button class="keyOperator" data-action="calculate">=</button>
+            </div>
+        </div>
+    </body>
+</html>
