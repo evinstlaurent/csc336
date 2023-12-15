@@ -1,0 +1,59 @@
+/* Carousel Styles */
+.carouselContainer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carouselSlide {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.carousel img {
+    max-height: 400px; /* Increase the maximum height */
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    border: 5px solid black; /* Add a border for a clean look */
+    transition: transform 0.2s;
+    min-height:300px;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.imageDescription {
+    left: 0;
+    right: 0;
+    margin:auto;
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    width:fit-content;
+    float: none;
+    border-radius: 3px;
+}
+
+.carouselSlide:hover .imageDescription {
+    display: block;
+}
+
+.prevButton, .nextButton {
+    background-color: #006999;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.2s;
+}

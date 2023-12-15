@@ -1,18 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Coastal Foot and Ankle</title>
+        <title>Coastal Foot and Ankle- Meet the Team</title>
         <link rel="stylesheet" type="text/css" href="coastal.css">
+        <link rel="stylesheet" type="text/css" href="staffCoastal.css">
         <script src="coastal.js" type="text/javascript"></script>
         <link rel="icon" type="image/x-icon" href="./images/coastallogosmall.png">
+        <link href="https://www.vecteezy.com/free-png/social-media-icons" rel="icon">
     </head>
     <body>
-        <header>
-            <a href="./indexCoastal.html#mainTitle">Home</a>
-            <a href="./staffCoastal.html">Meet the Team</a>
-            <a href="./servicesCoastal.html">Our Services</a>
-            <a href="./newPatientsCoastal.html">New Patients</a>
-            <a href="./contactCoastal.html">Contact Us</a>
-        </header>
+        <!--fixed nav bar with company name and page links-->
+        <nav>
+            <div class="companyNameDiv">
+                <a href="./indexCoastal.html#homeRef">Coastal Foot and Ankle</a>
+            </div>
+            <div class="linkDiv">
+                <a href="./indexCoastal.html#homeRef">Home | </a>
+                <a href="./staffCoastal.html#homeRef">Meet the Team | </a>
+                <a href="./newPatientsCoastal.html#homeRef">New Patients | </a>
+                <a href="./contactCoastal.html#homeRef">Contact Us</a>
+            </div>
+        </nav>
+
+        <!--Div that takes up space behind fixed nav bar-->
+        <div class="clearDiv" id="homeRef"></div>
+
+        <!--Staff page main title-->
+        <div id="mainTitle">
+            <h1>Meet the Team</h1>
+        </div>
+
+        <!--section with Doctor's bio and image of doctor-->
+        <div id="drBioSection" class="contentSection">
+            <img src="./images/doctorImage.jpg" alt="Dr Sabourin smiling" class="drBioPhoto">
+            <div class="drBioText">
+                <h3>Jonathan G. Sabourin, DPM, FACFAS<br>Foot and Ankle Physician</h3>
+                <p>Dr. Jonathan Sabourin is one of New England’s top surgeons for ankle scopes and Brostrom procedures. Graduating from Ohio College of Podiatric Medicine, and completing his Surgical Residency at MetroWest Medical Center specializing in trauma of lower extremity, Dr. Sabourin has a true appreciation for the repair of sports injuries.</p>
+                <p>He has shared his expertise professionally for almost 20 years by teaching residents and other physicians his procedures. He is a member of the resident selection committee for Charter Care and Roger Williams Medical Center. Dr. Sabourin is also a surgical instructor for ankle arthroscopy and surgical techniques.</p>
+                <p>He is a board member of the American College of Foot and Ankle Surgeons, board qualified in Reconstructive Foot and Ankle Surgery by the American College of Foot and Ankle Surgeons, and board qualified by the American Board of Podiatric Orthopedics and Primary Podiatric Medicine.</p>
+                <p>Currently, Dr. Sabourin is the President and a board member of the Rhode Island Podiatric Medical Association. Dr. Sabourin is a Southcoast affiliate specialist for Charlton Memorial Hospital, a Lifespan affiliate specialist for The Miriam Hospital and Newport Hospital, and has privileges at Roger Williams Hospital.</p>
+            </div>
+            <div class="clearDiv"></div>
+        </div>
+
+        <!--section with carousel of images and captions of office staff-->
+        <div id="staffBioSection" class="contentSection">
+            <h1>Office Staff</h1>
+            <div class="carouselContainer">
+                <div class="carousel">
+                    <!--carousel slide with image and caption-->
+                    <div class="carouselSlide">
+                        <img src="./images/stephanieImage.jpg" alt="Practice Manager Stephanie">
+                        <h2 class="imageDescription">Stephanie,<br>Practice Manager</h2>
+                    </div>
+                    <!--carousel slide with image and caption-->
+                    <div class="carouselSlide">
+                        <img src="./images/ashleyImage.jpg" alt="Practice Administrator Ashley">
+                        <h2 class="imageDescription">Ashley,<br>Practice Administrator</h2>
+                    </div>
+                    <!--carousel slide with image and caption-->
+                    <div class="carouselSlide">
+                        <img src="./images/crystalImage.jpg" alt="Medical Secretary Crystal">
+                        <h2 class="imageDescription">Crystal,<br>Medical Secretary<br>Middletown</h2>
+                    </div>
+                    <!--carousel slide with image and caption-->
+                    <div class="carouselSlide">
+                        <img src="./images/maggieImage.jpg" alt="Medial Assisstant Maggie">
+                        <h2 class="imageDescription">Maggie,<br>Medical Assisstant<br>Middletown, Fall River</h2>
+                    </div>
+                    <!--carousel slide with image and caption-->
+                    <div class="carouselSlide">
+                        <img src="./images/lilleeImage.jpg" alt="Medial Assisstant Lillee">
+                        <h2 class="imageDescription">Lillee,<br>Medical Assisstant<br>Middletown, Fall River</h2>
+                    </div>
+                </div>
+                <!--carousel buttons-->
+                <button class="prevButton">Previous</button>
+                <button class="nextButton">Next</button>
+            </div>
+            <div class="clearDiv"></div>
+        </div>
+
+        <!--social media bar with links to coastal social media-->
+        <div class="socialBar">
+            <a href="https://www.instagram.com/coastalfootankle/" target="_blank"><img class="socialIcon" src="./images/instagramIcon.png" alt="Instagram Icon"></a>
+            <a href="https://www.facebook.com/p/Coastal-Foot-Ankle-Dr-Jonathan-Sabourin-100063559301704/" target="_blank"><img class="socialIcon" src="./images/facebookIcon.png" alt="Facebook Icon"></a>
+        </div> 
     </body>
 </html>

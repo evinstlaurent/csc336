@@ -1,18 +1,96 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Coastal Foot and Ankle</title>
+        <title>Coastal Foot and Ankle- Contact Us</title>
         <link rel="stylesheet" type="text/css" href="coastal.css">
         <script src="coastal.js" type="text/javascript"></script>
         <link rel="icon" type="image/x-icon" href="./images/coastallogosmall.png">
+        <link href="https://www.vecteezy.com/free-png/social-media-icons" rel="icon">
     </head>
     <body>
-        <header>
-            <a href="./indexCoastal.html#mainTitle">Home</a>
-            <a href="./staffCoastal.html">Meet the Team</a>
-            <a href="./servicesCoastal.html">Our Services</a>
-            <a href="./newPatientsCoastal.html">New Patients</a>
-            <a href="./contactCoastal.html">Contact Us</a>
-        </header>
+        <!--fixed nav bar with company name and page links-->
+        <nav>
+            <div class="companyNameDiv">
+                <a href="./indexCoastal.html#homeRef">Coastal Foot and Ankle</a>
+            </div>
+            <div class="linkDiv">
+                <a href="./indexCoastal.html#homeRef">Home | </a>
+                <a href="./staffCoastal.html#homeRef">Meet the Team | </a>
+                <a href="./newPatientsCoastal.html#homeRef">New Patients | </a>
+                <a href="./contactCoastal.html#homeRef">Contact Us</a>
+            </div>
+        </nav>
+        <!--Div that takes up space behind fixed nav bar-->
+        <div class="clearDiv" id="homeRef"></div>
+
+        <!--Contact page main title-->
+        <div id="mainTitle">
+            <h1>Contact Us!</h1>
+        </div>
+
+        <!--section with prompt to call office and review business on google with links to google maps pages-->
+        <div class=contentSection id="reviewPromptSection">
+            <div class="reviewPromptSectionText"><h2>To schedule an appointment at any of our locations please give us a call and review us on Google Maps! (<a href="https://maps.app.goo.gl/g3iGDq14RyiTmZNB9" target="_blank">Middletown</a>/<a href="https://maps.app.goo.gl/2EbbTCfNBxc2naGW7" target="_blank">Fall River</a>)</h2></div>
+        </div>
+
+        <!--Section with contact information and iframe google maps object for the middletown office-->
+        <div id="middletownContactSection">
+            <div class="middletownContact">
+                <h2>850 Aquidneck Avenue, Rear 15</h2>
+                <h2>Middletown Commons Plaza</h2>
+                <h2>Middletown, RI 02842</h2>
+                <h2>Telephone: (401) 849-2157</h2>
+                <h2>Fax: (401) 848-8441</h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190895.44839906244!2d-71.37811526284823!3d41.61810383589349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e44c796959b8cd%3A0x33791cefa583363b!2sJonathan%20G.%20Sabourin-%20Coastal%20Foot%20%26%20Ankle!5e0!3m2!1sen!2sus!4v1702164635779!5m2!1sen!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="locationMap"></iframe>
+            <div class="clearDiv"></div>
+        </div>
+
+         <!--Section with contact information and iframe google maps object for the fall river office-->
+        <div id="fallRiverContactSection">
+            <div class="fallRiverContact">
+                <h2>1822 North Main Street</h2>
+                <h2>First Floor Suite 105</h2>
+                <h2>Fall River, Massachusetts 02720</h2>
+                <h2>Telephone: (508) 258-1717</h2>
+                <h2>Fax: (774) 365-6272</h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190895.44839906244!2d-71.37811526284823!3d41.61810383589349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4f9029e076add%3A0xbf8cf763d71955d!2sJonathan%20G.%20Sabourin-%20Coastal%20Foot%20%26%20Ankle!5e0!3m2!1sen!2sus!4v1702166077466!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="locationMap"></iframe>
+            <div class="clearDiv"></div>
+        </div>
+
+        <!--Section with contact form header and contact form with name, email, phone, and message text fields that connects to Web3Forms email API-->
+        <!--code for form submission and information found at "https://docs.web3forms.com/getting-started/installation"-->
+        <div id="formHeader">
+            <h2>Contact Form</h2>
+            <h3>For any inquiries, feel free to give the office a call or fill out the form below!</h3>
+        </div>
+        <div id="contactForm">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!--access key for specific email-->
+                <input type="hidden" name="access_key" value="efbfac5d-aca1-430b-ae95-4cf7db8d9047">
+
+                <span class="formLabel">Name:</span>
+                <input type="text" name="name" placeholder="Type name here..." size="60"><br><br>
+                <span class="formLabel">Email:</span>
+                <input type="email" name="email" required placeholder="Type email here..." size="60"><br><br>
+                <span class="formLabel">Phone:</span>
+                <input type="text" name="Phone Number" required placeholder="Type phone number here..." size="60"><br><br>
+                <div class="formLabelMessage">Message:</div><br>
+                <textarea name="message" required placeholder="Type message here..." rows="5" cols="70"></textarea><br><br>
+                
+                <!--redirects to Web3Forms success page if form is successfully submitted-->
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                <!--form submit button-->
+                <div class="formSubmitButton"><button type="submit">Submit Form</button></div>
+            </form>
+        </div>
+
+        <!--social media bar with links to coastal social media-->
+        <div class="socialBar">
+            <a href="https://www.instagram.com/coastalfootankle/" target="_blank"><img class="socialIcon" src="./images/instagramIcon.png" alt="Instagram Icon"></a>
+            <a href="https://www.facebook.com/p/Coastal-Foot-Ankle-Dr-Jonathan-Sabourin-100063559301704/" target="_blank"><img class="socialIcon" src="./images/facebookIcon.png" alt="Facebook Icon"></a>
+        </div> 
     </body>
 </html>

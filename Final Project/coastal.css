@@ -11,10 +11,331 @@ body, html {
     box-sizing: inherit;
 }
 
+nav {
+    background-color: dodgerblue;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    padding-top: 5px;
+    overflow:hidden;
+    position: fixed;
+    top: 0;
+    width:100%;
+    left:0;
+    right:0;
+    z-index: 1;
+}
+nav a{
+    text-decoration: none;
+    color: white; 
+}
+
+#homeRef {
+    height: 5%;
+}
+
+#mainTitle {
+    font-size: 25pt;
+    text-align: center;
+    margin: auto;
+}
+.companyNameDiv {
+    text-align: left;
+    margin-left: 2%;
+    float:left;
+}
+
+.linkDiv {
+    text-align: right;
+    margin-right: 2%;
+    float:right;
+}
+
+.socialIcon {
+    height: 35px;
+    width: 35px;
+}
+
+.socialBar {
+    width:100%;
+    padding: 10px;
+    overflow:hidden;
+    bottom:0;
+    background-color: dodgerblue;
+}
+
+.aboutUsPhoto {
+    width: 300px;
+    float: left;
+    margin-left: 13%;
+    margin-top: 20px;
+}
+
+.missionText {
+    float: right;
+    margin-right: 13%;
+    width: 40%;
+    font-size:17pt;
+}
+
+.clearDiv {
+    clear: both;
+}
+
 .serviceIMG {
-    width: 400px;
+    width: 300px;
 }
 
 #servicesTable {
     margin: auto;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.carouselContainer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carouselSlide {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel img {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s;
+    min-height:300px;
+    float: right;
+    margin-right: 15%;
+    max-width:400px;
+    border: 5px black solid;
+}
+
+.contentSection {
+    text-align: center;
+    padding: 10px;
+    width: 100%; 
+    font-size: 14pt;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+#missionSection, #communitySection, #drBioSection, #interestSection, #middletownNewPatientSection, #reviewPromptSection, #fallRiverContactSection {
+    background-color: lightgray;
+}
+
+.imageDescription {
+    float: left;
+    margin-left: 15%;
+    width: 30%;
+}
+
+.carousel p {
+    font-size: 15pt;
+}
+
+.prevButton, .nextButton {
+    background-color: #006999;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.carousel Button {
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px black solid;
+    height: 25px;
+}
+
+.drBioPhoto {
+    width: 25%;
+    float: right;
+    margin-right: 7%;
+}
+
+.drBioText {
+    width: 50%;
+    float: left;
+    margin-left: 7%;
+}
+
+.drBioText p {
+    text-align: left;
+    text-indent: 40px;
+}
+
+.officeStaffLabel {
+    float:left;
+    margin-left: 20%;
+}
+
+.newPatientTextSection, .interestTextSection, .idListSection, .expectationTextSection, .middletownNewPatientTextSection, .fallRiverNewPatientTextSection {
+    text-align: left;
+    font-size: 18pt;
+    width: 40%;
+}
+
+.newPatientTextSection p, .interestTextSection p, .idListSection p, .expectationTextSection p {
+    text-indent: 25px;
+}
+
+
+.pdfDemoSection {
+    float: right;
+    margin-right: 5%;
+    width: 40%;
+    height: 450px;
+}
+
+.pdfDemos {
+    width:100%;
+    height: 100%;
+}
+
+.expectationTextSection {
+    float: left;
+    margin-left: 5%;
+}
+
+.interestTextSection {
+    float: left;
+    margin-left: 5%;
+}
+
+.idListSection {
+    float: right;
+    margin-right: 5%;
+}
+
+.middletownNewPatientTextSection, .fallRiverNewPatientTextSection {
+    width: 90%;
+    margin: auto;
+}
+
+#middletownNewPatientSection, #fallRiverNewPatientSection, #middletownContactSection, #fallRiverContactSection {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.middletownContact, .fallRiverContact {
+    float: left;
+    font-size: 18pt;
+    margin-left: 5%;
+    text-align: right;
+}
+
+.locationMap {
+    float: right;
+    margin-right: 5%;
+}
+
+.reviewPromptSectionText, #formHeader {
+    font-size: 18pt;
+    width: 80%;
+    margin:auto;
+}
+
+#contactForm {
+    width: 50%;
+    margin: auto;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 5%;
+    text-align: left;
+}
+
+.formLabel, .formLabelMessage {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.formSubmitButton {
+    text-align: center;
+    margin: auto;
+}
+
+.formSubmitButton Button {
+    height: 30px;
+    font-size: 14pt;
+    border-radius: 5px;
+    border: transparent;
+}
+
+#contactForm input{
+    height: 40px;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.formLabelMessage {
+    text-align: center;
+    margin: auto;
+}
+
+#contactForm textarea {
+    border: transparent;
+    border-radius: 10px;
 }

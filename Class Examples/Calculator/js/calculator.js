@@ -1,12 +1,26 @@
-var memory = 0;
-var operator = "";
-
 function appendDigit(digit) {
     let display = document.querySelector(".display");
     let displayValue = display.textContent.trim();
+    if (digit === "+" || digit === "-" || digit === "*" || digit === "/") {
+        if (displayValue.includes('+')||displayValue.includes('-')||displayValue.includes('*')||displayValue.includes('/')) {
+            return;
+        }
+    }
     if (displayValue === "0") {
         if (digit === ".") {
-            display.textContent = "0."
+            display.textContent = "0.";
+            return;
+        }
+        if (digit === "+") {
+            return;
+        }
+        if (digit === "-") {
+            return;
+        }
+        if (digit === "*") {
+            return;
+        }
+        if (digit === "/") {
             return;
         }
         display.textContent = digit;
@@ -21,44 +35,60 @@ function appendDigit(digit) {
 function clearDisplay() {
     let display = document.querySelector(".display");
     display.textContent = "0";
-    memory = 0;
-    operator = '';
 }
 
-function invert() {
+function backspace() {
     let display = document.querySelector(".display");
     let displayValue = display.textContent.trim();
-    display.textContent = displayValue * -1;
+    if (displayValue === "0") {
+        return;
+    } else if (displayValue === "1" || displayValue === "2" || displayValue === "3" || displayValue === "4" || displayValue === "5" || displayValue === "6" || displayValue === "7" || displayValue === "8" || displayValue === "9") {
+        display.textContent = 0;
+        return;
+    }
+    display.textContent = displayValue.slice(0, -1);
 }
 
 function percent() {
     let display = document.querySelector(".display");
     let displayValue = display.textContent.trim();
+    if (displayValue.includes('+')||displayValue.includes('-')||displayValue.includes('*')||displayValue.includes('/')) {
+        return;
+    }
     display.textContent = displayValue / 100;
 }
 
-function operation(op) {
-    let result = 0
+function calculate() {
     let display = document.querySelector(".display");
-    let displayValue = display.textContent.trim();
+    let displayValue = display.textContent.trim().valueOf();
 
-    if (operator === "") {
-        memory = displayValue;
-        operator = op;
+    if (displayValue.includes('+')) {
+        let opIndex = displayValue.indexOf('+');
+        let num1 = displayValue.slice(0,opIndex);
+        let num2 = displayValue.slice(opIndex+1,displayValue.length);
+        output = num1*1+num2*1;
+        display.textContent = output;
         return;
-    } else if (operator === "+") {
-        result = (memory * 1) + displayValue;
-        display.textContent = result;
-        memory = result;
-        operator = op;
+    } else if (displayValue.includes('-')) {
+        let opIndex = displayValue.indexOf('-');
+        let num1 = displayValue.slice(0,opIndex);
+        let num2 = displayValue.slice(opIndex+1,displayValue.length);
+        output = num1*1-num2*1;
+        display.textContent = output;
         return;
-    } else if (operator === "-") {
-
-    } else if (operator === "*") {
-
-    } else if (operator === "/") {
-
+    } else if (displayValue.includes('*')) {
+        let opIndex = displayValue.indexOf('*');
+        let num1 = displayValue.slice(0,opIndex);
+        let num2 = displayValue.slice(opIndex+1,displayValue.length);
+        output = (num1*1)*(num2*1);
+        display.textContent = output;
+        return;
+    } else if (displayValue.includes('/')) {
+        let opIndex = displayValue.indexOf('/');
+        let num1 = displayValue.slice(0,opIndex);
+        let num2 = displayValue.slice(opIndex+1,displayValue.length);
+        output = (num1*1)/(num2*1);
+        display.textContent = output;
+        return;
     }
-    memory = displayValue;
-    operator = op;
 }

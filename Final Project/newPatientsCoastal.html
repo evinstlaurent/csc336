@@ -1,18 +1,125 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Coastal Foot and Ankle</title>
+        <title>Coastal Foot and Ankle- New Patients</title>
         <link rel="stylesheet" type="text/css" href="coastal.css">
         <script src="coastal.js" type="text/javascript"></script>
         <link rel="icon" type="image/x-icon" href="./images/coastallogosmall.png">
+        <link href="https://www.vecteezy.com/free-png/social-media-icons" rel="icon">
     </head>
     <body>
-        <header>
-            <a href="./indexCoastal.html#mainTitle">Home</a>
-            <a href="./staffCoastal.html">Meet the Team</a>
-            <a href="./servicesCoastal.html">Our Services</a>
-            <a href="./newPatientsCoastal.html">New Patients</a>
-            <a href="./contactCoastal.html">Contact Us</a>
-        </header>
+        <!--fixed nav bar with company name and page links-->
+        <nav>
+            <div class="companyNameDiv">
+                <a href="./indexCoastal.html#homeRef">Coastal Foot and Ankle</a>
+            </div>
+            <div class="linkDiv">
+                <a href="./indexCoastal.html#homeRef">Home | </a>
+                <a href="./staffCoastal.html#homeRef">Meet the Team | </a>
+                <a href="./newPatientsCoastal.html#homeRef">New Patients | </a>
+                <a href="./contactCoastal.html#homeRef">Contact Us</a>
+            </div>
+        </nav>
+
+        <!--Div that takes up space behind fixed nav bar-->
+        <div class="clearDiv" id="homeRef"></div>
+
+        <!--New Patient page main title-->
+        <div id="mainTitle">
+            <h1>New Patient Information</h1>
+        </div>
+
+        <!--section with company interest paragraph and embedded pdf object of the new patient intake forms-->
+        <div class="contentSection" id="interestSection">
+            <!--interest paragraph section-->
+            <div class="interestTextSection">
+                <h2>Interested In Coastal Foot and Ankle?</h2>
+                <p>If you are looking for a specialized podiatry practice with personalized care to treat your lower-extremity issue, Coastal Foot and Ankle is here to help you and we are always accepting new patients! If our practice seems like a good fit for you, give us a call to schedule an initial appointment today. We look forward to hearing from you!</p>
+                <p>You can dowload our new patient inkake forms to the right or linked <a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:9ac114ce-664c-4d2c-a233-199e6fdb15c2" target="_blank">here</a> and bring them completed to your appointment.</p>
+            </div>
+            <!--embedded pdf object-->
+            <div class="pdfDemoSection">
+                <object data="./Coastal Foot and Ankle New Patient Demos.pdf" type="application/pdf" class="pdfDemos">
+                    <p>Unable to display PDF file. <a href="./Coastal Foot and Ankle New Patient Demos.pdf">Download</a> instead.</p>
+                </object>
+            </div>
+            <div class="clearDiv"></div>
+        </div>
+
+        <!--section with paragraph of office expectations and unordered list of valid forms of ID-->
+        <div id="expectationsSection">
+            <!--expectations paragraph text-->
+            <div class="expectationTextSection">
+                <h2>Expectations for Your First Visit!</h2>
+                <p>Our office will give you a call roughly 48 hours before your scheduled appointment to confirm the date and time and ensure you are prepared for your first Coastal Foot and Ankle consultation.</p>
+                <p>All patients at Coastal Foot and Ankle are required to have updated patient intake forms on file with us. For new patients, please arrive 30 minutes early to the office to fill out these forms. If you care to fill the forms out prior to your appointment, a PDF link can be found at the bottom of this page stating "Click Here to Download Patient Intake Forms". If you have your paperwork completed prior to your arrival, please arrive 15 minutes early for your visit.</p>
+            </div>
+            <!--valid ID list-->
+            <div class="idListSection">
+                <h2>What To Bring to Your Initial Appointment:</h2>
+                <ul>
+                    <li>
+                        Photo I.D.
+                        <ul>
+                            <li>Driver's License</li>
+                            <li>State-issued I.D.</li>
+                            <li>Military I.D.</li>
+                            <li>Federal-issued I.D.</li>
+                            <li>Passport</li>
+                        </ul>
+                    </li>
+                    <li>Valid Primary and Secondary Insurance Cards</li>
+                    <li>List of Current Medications and Allergies</li>
+                    <li>Completed New Patient Intake Forms</li>
+                </ul>
+            </div>
+            <div class="clearDiv"></div>
+        </div>
+
+        <!--section with information about the middletown office, along with contact information and an iframe google maps object for the middletown office-->
+        <div id="middletownNewPatientSection">
+            <!--middletown office info text section-->
+            <div class="middletownNewPatientTextSection">
+                <h2>Appointment in the Middletown Office?</h2>
+                <p>Our Middletown Office is located at 850 Aquidneck Avenue in Middletown, RI at the Middletown Commons Plaza. Our office is located at the rear of the plaza and can be reached by driving down the left side of the plaza building and taking a right. Continue forward and our office is the first business you will see on your right. There is a green awning above our door that says "Coastal Foot and Ankle" and a wooden bench to the right of our door. There is handicap-accessible parking located in front of our door. Any questions? We can be reached at (401) 849-2157.</p>
+            </div>
+            <!--middletown office contact info-->
+            <div class="middletownContact">
+                <h2>850 Aquidneck Avenue, Rear 15</h2>
+                <h2>Middletown Commons Plaza</h2>
+                <h2>Middletown, RI 02842</h2>
+                <h2>Telephone: (401) 849-2157</h2>
+                <h2>Fax: (401) 848-8441</h2>
+            </div>
+            <!--middletown office iframe google map-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190895.44839906244!2d-71.37811526284823!3d41.61810383589349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e44c796959b8cd%3A0x33791cefa583363b!2sJonathan%20G.%20Sabourin-%20Coastal%20Foot%20%26%20Ankle!5e0!3m2!1sen!2sus!4v1702164635779!5m2!1sen!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="locationMap"></iframe>
+            <div class="clearDiv"></div>
+        </div>
+
+        <!--section with information about the fall river office, along with contact information and an iframe google maps object for the fall river office-->
+        <div id="fallRiverNewPatientSection">
+            <!--fall river office info text section-->
+            <div class="fallRiverNewPatientTextSection">
+                <h2>Appointment in the Fall River Office?</h2>
+                <p>Our Fall River Office is located at 1822 North Main Street in Fall River, MA. We are located in the same building as the Fall River branch of The Massachusetts Registry of Motor Vehicles. After parking, there is a large set of glass doors that say "1822" above them. Our office is right after you enter those doors. Our office is located in Suite 105 on the first floor. Any questions? We can be reached at (508) 258-1717.</p>
+            </div>
+            <!--fall river office contact info-->
+            <div class="fallRiverContact">
+                <h2>1822 North Main Street</h2>
+                <h2>First Floor Suite 105</h2>
+                <h2>Fall River, Massachusetts 02720</h2>
+                <h2>Telephone: (508) 258-1717</h2>
+                <h2>Fax: (774) 365-6272</h2>
+            </div>
+            <!--fall river office iframe google map-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190895.44839906244!2d-71.37811526284823!3d41.61810383589349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4f9029e076add%3A0xbf8cf763d71955d!2sJonathan%20G.%20Sabourin-%20Coastal%20Foot%20%26%20Ankle!5e0!3m2!1sen!2sus!4v1702166077466!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="locationMap"></iframe>
+            <div class="clearDiv"></div>
+        </div>
+
+        <!--social media bar with links to coastal social media-->
+        <div class="socialBar">
+            <a href="https://www.instagram.com/coastalfootankle/" target="_blank"><img class="socialIcon" src="./images/instagramIcon.png" alt="Instagram Icon"></a>
+            <a href="https://www.facebook.com/p/Coastal-Foot-Ankle-Dr-Jonathan-Sabourin-100063559301704/" target="_blank"><img class="socialIcon" src="./images/facebookIcon.png" alt="Facebook Icon"></a>
+        </div> 
     </body>
 </html>
